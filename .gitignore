@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Docker
+docker-compose.override.yml
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Databases (optional, if you use SQLite for tests)
+*.sqlite3
