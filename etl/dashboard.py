@@ -11,14 +11,18 @@ DB_PORT = "5432"
 DB_NAME = "etl_db"
 
 # Create connection
-engine = create_engine(f"postgresql+psycopg2://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
+engine = create_engine(
+    f"postgresql+psycopg2://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+)
 
 st.title("📊 Movies Dataset Dashboard")
+
 
 @st.cache_data
 def load_data():
     query = "SELECT * FROM movies"
     return pd.read_sql(query, engine)
+
 
 df = load_data()
 
