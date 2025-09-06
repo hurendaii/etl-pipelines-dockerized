@@ -1,4 +1,3 @@
-import pandas as pd
 from etl.main import extract_data, transform_data
 from pathlib import Path
 
