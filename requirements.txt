@@ -1,2 +1,8 @@
 pandas
 pytest
+sqlalchemy
+psycopg2-binary
+streamlit
+black
+flake8
+pytest
