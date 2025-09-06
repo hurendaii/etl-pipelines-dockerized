@@ -47,7 +47,9 @@ jobs:
         run: flake8 .
 
       - name: Run tests
-        run: pytest
+        run: |
+          export PYTHONPATH=$(pwd)
+          pytest -v
 
       - name: Build Docker image
         run: docker build -t etl-pipeline .
